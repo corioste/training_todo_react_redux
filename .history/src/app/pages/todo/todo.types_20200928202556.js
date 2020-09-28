@@ -1,0 +1,2 @@
+const LOAD_TODO = 'LOAD_TODO';
+const ADD_TODO = 'ADD_TODO'

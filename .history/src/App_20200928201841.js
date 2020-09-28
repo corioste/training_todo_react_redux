@@ -4,15 +4,14 @@ import { createStore, combineReducers, applyMiddleware } from "redux"
 import thunk from "redux-thunk"
 
 import TodoList from './app/pages/todo/TodoList'
-import todos from './app/pages/todo/Todo.reducers'
 
 // Setup Redux store with Thunks
-const reducers = combineReducers({ todos })
+const reducers = combineReducers()
 const store = createStore(reducers, applyMiddleware(thunk))
 
 const App = () => (
     <Provider store={store}>
-        <TodoList />
+      
     </Provider>
 )
 
